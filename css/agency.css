@@ -1,16 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+/*** CRITERIA COLORS **/
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .text-muted {
   color: #777; }
 
 .text-primary {
-  color: #fed136; }
+  color: #e8d948; }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.75; }
 
 p.large {
@@ -24,13 +26,13 @@ a:hover {
   outline: none; }
 
 a {
-  color: #fed136; }
+  color: #e8d948; }
 
 a.active,
 a:active,
 a:focus,
 a:hover {
-  color: #fec503; }
+  color: #e1ce1c; }
 
 h1,
 h2,
@@ -54,8 +56,8 @@ h6 {
 
 .btn-primary {
   color: white;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #e8d948;
+  border-color: #e8d948;
   font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   text-transform: uppercase;
@@ -63,8 +65,8 @@ h6 {
   .btn-primary.active, .btn-primary:active, .btn-primary:focus, .btn-primary:hover,
   .open .dropdown-toggle.btn-primary {
     color: white;
-    background-color: #fec503;
-    border-color: #f6bf01; }
+    background-color: #e1ce1c !important;
+    border-color: #d8c61b; }
 
   .btn-primary.active, .btn-primary:active,
   .open .dropdown-toggle.btn-primary {
@@ -76,16 +78,16 @@ h6 {
   fieldset[disabled] .btn-primary:active,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] .btn-primary:hover {
-    background-color: #fed136;
-    border-color: #fed136; }
+    background-color: #e8d948;
+    border-color: #e8d948; }
   .btn-primary .badge {
-    color: #fed136;
+    color: #e8d948;
     background-color: white; }
 
 .btn-xl {
   color: white;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #e8d948;
+  border-color: #e8d948;
   font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   text-transform: uppercase;
@@ -96,8 +98,8 @@ h6 {
   .btn-xl.active, .btn-xl:active, .btn-xl:focus, .btn-xl:hover,
   .open .dropdown-toggle.btn-xl {
     color: white;
-    background-color: #fec503;
-    border-color: #f6bf01; }
+    background-color: #e1ce1c !important;
+    border-color: #d8c61b; }
 
   .btn-xl.active, .btn-xl:active,
   .open .dropdown-toggle.btn-xl {
@@ -109,33 +111,39 @@ h6 {
   fieldset[disabled] .btn-xl:active,
   fieldset[disabled] .btn-xl:focus,
   fieldset[disabled] .btn-xl:hover {
-    background-color: #fed136;
-    border-color: #fed136; }
+    background-color: #e8d948;
+    border-color: #e8d948; }
   .btn-xl .badge {
-    color: #fed136;
+    color: #e8d948;
     background-color: white; }
 
 .navbar-default {
   background-color: #222;
   border-color: transparent; }
   .navbar-default .navbar-brand {
-    color: #fed136;
+    color: #e8d948;
     font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
     padding: 0; }
     .navbar-default .navbar-brand > img {
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      opacity: 0;
       height: 75px;
       margin-top: -13px; }
     .navbar-default .navbar-brand.active, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-      color: #fec503; }
+      color: #e1ce1c; }
   .navbar-default .navbar-collapse {
     border-color: fade(white, 2%); }
   .navbar-default .navbar-toggle {
-    background-color: #fed136;
-    border-color: #fed136; }
+    background-color: #e8d948;
+    border-color: #e8d948; }
     .navbar-default .navbar-toggle .icon-bar {
       background-color: white; }
     .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-      background-color: #fed136; }
+      background-color: #e8d948; }
   .navbar-default .nav li a {
     font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
@@ -144,16 +152,16 @@ h6 {
     letter-spacing: 1px;
     color: white; }
     .navbar-default .nav li a:focus, .navbar-default .nav li a:hover {
-      color: #fed136;
+      color: #e8d948;
       outline: none; }
   .navbar-default .navbar-nav > .active > a {
     border-radius: 0;
     color: white;
-    background-color: #fed136; }
+    background-color: #e8d948; }
   .navbar-default .navbar-nav > .active > a:focus,
   .navbar-default .navbar-nav > .active > a:hover {
     color: white;
-    background-color: #fec503; }
+    background-color: #e1ce1c; }
 
 @media (min-width: 768px) {
   .navbar-default {
@@ -180,17 +188,22 @@ h6 {
   border-radius: 3px; }
 
 .navbar-custom.affix {
-  background-color: #222;
+  background-color: #eee;
   padding: 10px 0; }
   .navbar-custom.affix .navbar-brand > img {
+    opacity: 1;
     height: 65px;
     margin-top: -8px; }
+  .navbar-custom.affix .nav li a {
+    color: #776b65; }
+  .navbar-custom.affix .nav li.active a {
+    color: white; }
 
 .navbar-custom.affix .navbar-brand {
   font-size: 1.5em; }
 
 header {
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/walking.jpg");
   background-repeat: none;
   background-attachment: scroll;
   background-position: center center;
@@ -220,28 +233,26 @@ header {
 
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px; }
+    padding-top: 160px;
+    padding-bottom: 300px; }
+    header .intro-text #main-logo {
+      height: 140px; }
     header .intro-text .intro-lead-in {
       font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: 300;
       text-transform: uppercase;
-      font-size: 37px;
+      font-size: 26px;
       line-height: 40px;
-      margin-bottom: 10px; }
-    header .intro-text .intro-heading {
-      font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: 300;
-      text-transform: uppercase;
-      font-size: 65px;
-      line-height: 75px;
-      margin-bottom: 50px; } }
+      margin-bottom: 20px;
+      margin-top: 20px; } }
 section {
   padding: 100px 0; }
   section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px; }
+    section h2.section-heading.no-subtitle {
+      margin-bottom: 30px; }
   section h3.section-subheading {
     font-size: 16px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -249,6 +260,8 @@ section {
     font-style: italic;
     font-weight: 400;
     margin-bottom: 75px; }
+  section h4.top-padded {
+    margin-top: 30px; }
 
 @media (min-width: 768px) {
   section {
@@ -266,7 +279,7 @@ section {
     max-width: 400px;
     margin: 0 auto; }
     #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-      background: fade(#fed136, 90%);
+      background: fade(#e8d948, 90%);
       position: absolute;
       width: 100%;
       height: 100%;
@@ -355,7 +368,7 @@ section {
       height: 80px;
       position: absolute;
       z-index: 100;
-      background-color: #fed136;
+      background-color: #e8d948;
       color: white;
       border-radius: 100%;
       border: 7px solid #f1f1f1;
@@ -474,7 +487,7 @@ section#contact {
     section#contact .form-group textarea.form-control {
       height: 236px; }
   section#contact .form-control:focus {
-    border-color: #fed136;
+    border-color: #e8d948;
     box-shadow: none; }
   section#contact ::-webkit-input-placeholder {
     font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -538,7 +551,7 @@ ul.social-buttons {
     -moz-transition: all 0.3s;
     transition: all 0.3s; }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-      background-color: #fed136; }
+      background-color: #e8d948; }
 
 .btn.active,
 .btn:active,
@@ -607,11 +620,11 @@ ul.social-buttons {
 
 ::-moz-selection {
   text-shadow: none;
-  background: #fed136; }
+  background: #e8d948; }
 
 ::selection {
   text-shadow: none;
-  background: #fed136; }
+  background: #e8d948; }
 
 img::selection {
   background: transparent; }
@@ -620,6 +633,6 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #fed136; }
+  -webkit-tap-highlight-color: #e8d948; }
 
 /*# sourceMappingURL=agency.css.map */
